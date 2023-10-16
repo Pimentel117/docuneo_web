@@ -5,6 +5,7 @@
   
   body {
     font-family: sans-serif;
+    align-items: center;
   }
   
   header {
@@ -40,8 +41,41 @@
     background-color: orange;
   }
   
-  .images
+  .main-p
   {
-
-    align-items: center;
+    width: 400px;
+    height: auto;
+    background-color: #f9f9f9;
   }
+  
+  .main-p p
+  {
+    text-align: center;
+    font-size: 40 px;
+    font-family: Lexend;
+    color: gray;
+  }
+
+  .section-img1
+  {
+    display: flex;
+    width: 1vw;
+    height: auto;
+  }
+
+  .section-img1 img
+  {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5 ease;
+  }
+
+  .section-img1 img:hover
+  {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+  }
+
