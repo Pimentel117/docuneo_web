@@ -4,7 +4,7 @@
   }
   
   body {
-    font-family: sans-serif;
+    font-family: Lexend;
     align-items: center;
   }
   
@@ -43,10 +43,10 @@
   
   .img-logo
   {
-    display: flex;
-    width: 100%;
-    height: auto%;
-    background-color: black;
+    display: block;
+    align-items: center;
+    width: 70%;
+    background-color: f9f9f9;
   }
 
   .main-p
@@ -64,14 +64,21 @@
     color: gray;
   }
 
-  .section-img1
+  .section-p1
+  {
+    display: inline-block;
+    background-color: aqua;
+  }
+
+
+  .img-img1
   {
     display: flex;
     width: 100%;
     height: auto;
   }
 
-  .section-img1 img
+  .img-img1 img
   {
     width: 0;
     flex-grow: 1;
@@ -80,10 +87,17 @@
     transition: .5 ease;
   }
 
-  .section-img1 img:hover
+  /* .section-img1 img:hover
   {
     cursor: crosshair;
     width: 300px;
     opacity: 1;
-  }
+  } */
 
+  section
+  { 
+    height: 400px;
+    display: flex;
+    align-items: center;
+    
+  }
