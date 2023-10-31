@@ -3,7 +3,7 @@
     padding: 0;
   }
   
- /*#region Menu*/
+ /*#
 
   header {
     position: fixed;
@@ -38,32 +38,11 @@
     background-color: orange;
   }
 
-/*#endregion Menu*/
+*/
   
-.main-section{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.logo-container{
-  margin-top: 5em;
-  margin-left: 2em;
-  margin-left:  2em;
-  padding: 30px ;
-} 
-
-.logo-container img{
- height: fit-content;
-}
-
-.text-container{
-  margin: 2em ;
-  font-size: 30px;
-  font-size-adjust: 100%;
-}
 
 
+/*
 .socialbar{
   background-color: #eca334;
   
@@ -71,11 +50,12 @@
 }
 
 
+
 ul {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  /*transform: translate(-50%, -50%);*/
+  /*transform: translate(-50%, -50%);
 }
 
 ul li {
@@ -142,3 +122,4 @@ ul li:nth-child(3) a:before {
 ul li:nth-child(4) a:before {
   background: #c4302b;
 }
+/*
