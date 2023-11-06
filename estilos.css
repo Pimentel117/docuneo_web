@@ -1,0 +1,322 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: Lexend;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header{
+    background: #000;
+    display: flex;
+    flex-flow: column nowrap;
+}
+   
+    
+    .seccion-principal{
+        background: white;
+        display: flex;
+        flex-flow: column wrap ;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagen-principal{
+        background: white;
+        
+    }
+    .imagen-principal-image{
+        height: 400px;
+    }
+   
+        .texto-principal{
+            background: white;
+            padding-top: 20px;
+            padding-left: 150px;
+            padding-bottom: 20px;
+            padding-right: 150px;
+            font-size: 25px;
+            font-family: Lexend;
+            justify-items: center;
+        }
+    
+
+.section{
+    background: #000;
+    display: flex;
+    flex-flow: column ;
+}
+    .articulos{
+        background:#4e4e6a ;
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+        
+    }
+        .article{
+            background: #1f6cb0;
+            flex: 1 1 40%;
+            align-items: center;
+            justify-content: center;
+        }
+      
+        .articulos-1{
+            /*background:#4e4e6a ;*/
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+            
+
+        }
+        .article-1-0{
+            display: flex;
+            /*background: #1f6cb0; */
+            flex: 1 1 100%;
+            align-items: center;
+            justify-content: center;
+        }
+            .article-1-1{
+                display: flex;
+                /*background: #1f6cb0; */
+                flex: 1 1 30%;
+                align-items: center;
+                justify-content: center;
+                font-size: 30px;
+
+
+            }
+                
+            .article-1-2{
+                /*background: #1f6cb0; */
+                flex: 1 1 60%;
+   
+            }
+                
+    .articulos-2{
+        background-image: url(/images/sec3-img1.jpg) ;
+        background-repeat: no-repeat ;
+
+        background-size: 100%;
+        height: 100vh;
+        
+    }
+        .article-2-1{
+            
+            display: flex;
+            justify-content: center;
+            color: orange;
+            
+        }
+        .article-2-2{
+            
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            color:#fff;
+            font-size: 30px;
+            background: #000;
+            opacity: .5;
+            border-radius: 10%;
+
+        }
+           
+    
+    /* FORMULARIO DE CONTACTO */
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #444;
+    margin: 50px 50px;
+
+}
+
+.form{
+
+    min-width: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+
+}
+.form_input{
+    
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0px;
+}
+
+.form textarea{
+    min-height: 140px;
+}
+
+.form-image{
+    flex: 1;
+    padding: 10px ;
+    display: flex;
+}
+    .form-image div{
+        padding: 10px;
+    }
+        .img-container{
+           margin: auto;
+        }
+            .img-container div{
+                background-color: #fff;
+                border-radius: 50%;
+                text-align: center;
+                padding: 40px;
+            }
+
+    .form-image i{
+        
+        font-size: 200px;
+        margin: auto;
+    }
+
+.footer{
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+    .pie{
+        background: #1ede22;
+        width: 300px;
+        
+    }
+
+@media all and (max-width: 850px){   
+    .seccion{
+        flex-flow: row;
+    }
+    .articulos{
+        flex-direction: column;    
+    }
+    .articulos-1{
+        flex-flow: column;
+    }
+    .imagen-principal-image{
+        height: 300px;
+    }
+   
+        .texto-principal{
+            background: white;
+            padding-top: 20px;
+            padding-left: 100px;
+            padding-bottom: 20px;
+            padding-right: 100px;
+            font-size: 20px;
+            font-family: Lexend;
+            font-stretch: expanded;
+        }
+
+
+}
+
+@media all and (max-width : 600px){
+    .imagen-principal-image{
+        height: 200px;
+    }
+    .articulos{
+        flex-direction: column;    
+    }
+   
+        .texto-principal{
+            background: white;
+            padding-top: 20px;
+            padding-left: 50px;
+            padding-bottom: 20px;
+            padding-right: 50px;
+            font-size: 15px;
+            font-family: Lexend;
+        }
+}
+
+
+
+
+.socialbar{
+    background-color: #eca334;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  
+  .socialbar ul {
+    display: flex;
+    flex-wrap: nowrap;
+    
+  }
+  
+  .socialbar ul li {
+    list-style: none;
+  }
+  
+  .socialbar ul li a {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 10px 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+  }
+  
+  .socialbar ul li a .icon {
+
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+  }
+  
+  .socialbar ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  
+  .socialbar ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+  }
+  
+  .socialbar ul li a:hover:before {
+    top: 0;
+  }
+  
+  .socialbar ul li:nth-child(1) a:before{
+    background: #3b5999;
+  }
+  
+  .socialbar ul li:nth-child(2) a:before{
+    background: #25D366
+    ;
+  }
+  
+  .socialbar ul li:nth-child(3) a:before {
+    background: #DD2A7B;
+  }
+  
+  .socialbar ul li:nth-child(4) a:before {
+    background: #c4302b;}
